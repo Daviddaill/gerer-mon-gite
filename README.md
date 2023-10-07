@@ -1,6 +1,6 @@
 <h2 align="center">
   Booking Management System<br/>
-  <a href="https://www.gerer-mon-gite.com/" target="_blank">Gérer Mon Gîtes</a>
+  <a href="https://daviddaill.github.io/gerer-mon-gite/index.html" target="_blank">Gérer Mon Gîtes</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./image/gerer-mon-gite.png" />
@@ -19,7 +19,7 @@
 
 ## Description
 
-A Website to present a Java Desktop Application i have created, <a href="https://www.gerer-mon-gite.com/" target="_blank">Gérer mon gîte</a>,  the App aim to help small French cottage owners manage their rental business and customers quickly and efficiently <br/> 
+A Website to present a Java Desktop Application i have created. <a href="https://daviddaill.github.io/gerer-mon-gite/index.html" target="_blank">Gérer mon gîte</a>, aim to help small French cottage owners manage their rental business and customers quickly and efficiently <br/> 
 
 ## Built With
 This website was built using these technologies.
