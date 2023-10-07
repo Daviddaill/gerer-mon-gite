@@ -1,0 +1,666 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(31, 148, 215);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+a:hover {
+    color: rgb(2, 99, 129)
+}
+
+
+p, figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(69, 69, 69);
+    padding: 20px 0;
+}
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(69, 69, 69);
+    padding: 20px 0;
+}
+
+h1,h2{
+    padding: 20px 60px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(16, 43, 59);
+    font-size: 45px;
+}
+
+h3{
+    padding: 20px 60px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(16, 43, 59);
+    font-size: 30px;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 650px) {
+
+
+     h1,h2 {
+        font-size: 25px;
+    }
+    h3{
+        font-size: 18px;
+    }
+
+     p {
+        
+        font-size: 16px;
+    }
+
+}
+
+
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+
+
+}
+
+#companyName {
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    
+ 
+}
+#companyName p  {
+    padding-left:60px;
+    padding-right:10px;
+    
+}
+#companyName a{
+    color:black;
+}
+
+
+.logo {
+    
+    width: 50px;
+    height: 50px;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+nav {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav p {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+nav a{
+    color:black;
+}
+
+/**buton**/
+#button-div {
+    padding-right: 60px;
+}
+
+button {
+   font-weight: bold;
+    text-align: center;
+    margin: 10px 10px;
+    background-color:rgb(31, 158, 213);
+    color: rgb(254, 254, 254);
+    font-size: 16px;
+    padding: 15px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 4px;
+    
+
+}
+
+
+button:hover {
+
+    background-color: rgb(38, 38, 38) ;
+    color:rgb(101, 209, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+
+}
+
+.dropdown {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1050px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .dropbtn {
+        background-color: white;
+        color: rgb(53, 58, 66);
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 55px;
+        right: 10px;
+        background-color: #f1f1f1;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        color: rgb(153, 235, 250);
+    }
+
+    nav {
+        display: none;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        padding-left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    #button-div {
+        padding-right: 20px
+    }
+
+}
+@media only screen and (max-width: 650px) {
+
+    #companyName p{
+        padding-left: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    #button-div {
+        display:none
+        
+        
+    }
+
+    #companyName {
+        font-size: 18px;
+    }
+
+    .logo {
+        padding-left: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    #companyName {
+        padding-left: 20px
+    }
+
+
+}
+
+
+main {
+    position: relative;
+    top: 80px;
+    background-color: rgb(241, 247, 248);
+}
+#download{
+    display:none;
+}
+
+@media only screen and (max-width: 500px) {
+    #download{
+        
+        display:block;
+        position: fixed;
+        bottom: 40px;
+        
+        z-index:0;
+    }
+}
+
+/** accueil**/
+
+#accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+   
+}
+#accueil p {
+    padding: 20px 60px;
+   
+}
+
+
+
+#accueil article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 10px 0px;
+}
+
+
+#accueil figure {
+    margin:40px 0;
+    flex-shrink: 2;
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+#accueil img {
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #accueil  {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    #accueil  figure{
+        align-items: flex-start;
+        width:80%;
+        max-height:300px;
+        overflow: hidden;
+    }
+   
+}
+
+@media only screen and (max-width: 650px) {
+
+    #accueil article {
+        width: 100%;
+    }
+    #accueil p {
+        text-align:justify;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    #accueil {
+        height: auto;
+        padding:40px 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    
+
+    #accueil h1 {
+        padding: 10px 20px;
+        font-size: 25px;
+    }
+
+    #accueil p {
+
+        padding: 20px;
+    }
+    #accueil  figure{
+        align-items: flex-start;
+        width:80%;
+        max-height:200px;
+        overflow: hidden;
+    }
+
+}
+
+/** accueil**/
+
+.showcase {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 80px 0;
+    background-color: rgb(241, 247, 248)
+}
+
+
+
+.showcase article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 10px 0px;
+}
+
+
+
+.showcase p {
+    padding: 20px 60px;
+
+
+}
+
+.showcase figure {
+    overflow:hidden;
+    text-align: center;
+    max-height: 500px;
+    margin:40px 0;
+    flex-shrink: 2;
+    width: 45%;
+    
+    
+ 
+}
+
+.showcase img {
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    h2 {
+        font-size: 35px;
+    }
+    .showcase  figure{
+        align-items: flex-start;
+        
+        max-height:400px;
+        overflow:hidden;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    h2 {
+        font-size: 35px;
+    }
+    .showcase  p, .showcase h2{
+        padding: 20px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 650px) {
+    .showcase {
+        
+        padding:40px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .showcase p {
+        text-align:center;
+    }
+    .showcase article {
+        width: 100%;
+    }
+ .showcase figure{
+    width:60%;
+ }  
+ .showcase img{
+    width:100%;
+    height:auto;
+ } 
+ #features {
+          
+    flex-direction: column-reverse;
+}
+}
+
+
+
+ 
+
+
+
+@media only screen and (max-width: 450px) {
+    
+
+    .showcase h2 {
+        padding: 10px 20px;
+        font-size: 25px;
+    }
+
+    .showcase p {
+
+        padding: 20px;
+    }
+    .showcase figure {
+        overflow:hidden;
+        width:90%;
+        max-height:300px;
+
+    }
+    
+    .showcase img {
+        overflow: hidden;
+        width:370px;
+    }
+   
+
+}
+
+   
+
+.showcase2{
+    background-color:  rgb(241, 247, 248);
+    position:relative;
+    display:flex;
+    z-index:2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin:80px 0;    
+}
+.showcase2 article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    flex-direction: row-reverse;
+    
+}
+.showcase2 div{
+    margin: 40px 0;
+
+}
+
+.showcase2 p{
+    padding: 20px 60px;
+
+}
+.icons{
+    width:80px;
+    height:auto;
+}
+
+#tryNow {
+flex-direction: column;
+margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 900px) {
+    .showcase2 h3{
+    font-size: 25px;
+    }
+
+    .showcase2 article{
+        
+        width:80%;   
+    }
+    .icons{
+        width:60px;
+        height:auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .showcase2 p,.showcase2 h3 {
+        text-align: center;
+        padding: 10px 20px;
+    
+    }
+
+    .showcase2 article{
+        width:90%;
+        flex-wrap: wrap;   
+        flex-direction: column-reverse;
+        justify-content: baseline;
+    }
+   
+}
+
+
+
+
+/** footer **/
+footer  {
+    position:relative;
+    background-color: rgb(23, 52, 79);
+    z-index:2;
+    text-align: center;
+    padding:20px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+footer div{
+    padding:5px;
+}
+footer p{
+    color:#ffffff;
+    padding:10px;
+    font-size: 14px;
+}
+ .company-name p{
+    font-size: 18px;
+    
+}
+footer a{
+    color:#aae5ff;
+}
+footer a:hover{
+    color:#8ff6ff;
+}
+#moto{
+    font-size: 14px;
+}
+#developpeur{
+
+    color:#d2d2d2;
+}
+#mentions{
+    font-size: 14px;
+}
+
+#icons{
+    font-size: 12px; 
+    color:#7e7e7e;
+}
+
+.current-page {
+    color: rgb(31, 148, 215) !important;    
+}
+
